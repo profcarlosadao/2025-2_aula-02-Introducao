@@ -70,6 +70,10 @@ void main() {
     print("Fruta: $fruta");
   });
 
+  List<int> numeros = List.generate(5, (i)=> i + 1);
+  int soma = numeros.fold(0, (acumulado, elemento)=> acumulado + elemento);
+  print("A soma é: $soma");
+
   //--------------------- Mapas-------------------
 
   Map<String, dynamic> pessoa = {
